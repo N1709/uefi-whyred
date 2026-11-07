@@ -52,10 +52,9 @@
   INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
 
   #
-  # SMBIOS identity
+  # SMBIOS identity is in whyred.fdf: listing it here as well puts the same
+  # FILE_GUID in the FV twice and GenFv rejects the image.
   #
-  INF MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
-  INF SiliciumPkg/Drivers/SmBiosTableDxe/SmBiosTableDxe.inf
 
   #
   # Display: GOP over the framebuffer ABL already initialized. There is no

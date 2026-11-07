@@ -5591,7 +5591,7 @@
 
 ## Xiaomi Redmi Note 5 / Note 5 AI
 
-**State:** Inactive <br>
+**State:** Active <br>
 **Codename:** whyred
 
 **Contributors:** [N1709](https://github.com/N1709)
@@ -5599,8 +5599,10 @@
 ### UEFI Status
 
 First image is vendor-free: GOP over the ABL framebuffer, FDT memory expansion,
-UniXNU payload and DarwinBoot. No stock whyred display, storage, USB or PMIC
-driver is loaded yet. See `Platforms/Xiaomi/whyredPkg/PORTING.md`.
+UniXNU payload and DarwinBoot. The DEBUG build produces a 0x300000-byte
+`SILICIUM_UEFI.fd`; hardware boot is not tested yet. No stock whyred display,
+storage, USB or PMIC driver is loaded yet. See
+`Platforms/Xiaomi/whyredPkg/PORTING.md`.
 
 | Feature            | Description                    | State |
 |:-------------------|:-------------------------------|:-----:|
