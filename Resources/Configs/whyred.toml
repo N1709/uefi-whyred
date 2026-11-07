@@ -1,0 +1,31 @@
+#
+# Xiaomi Redmi Note 5 (whyred), SDM636.
+#
+# Boot Shim Configs
+#
+[boot_shim]
+requires_kernel_header = true
+
+#
+# UEFI FD Configs
+#
+# 0x9FC00000 + 0x300000 ends below the UEFI stack at 0x9FF90000 and above the
+# whyred splash reservation at 0x9D400000 + 0x02400000. Keep this identical to
+# the UniXNU device repository [firmware] and MemoryMapLib.c.
+#
+[uefi_fd]
+base = 0x9FC00000
+size = 0x300000
+
+#
+# Android Boot Image Kernel Configs
+#
+[boot_image_kernel]
+kernel_compression = "gzip"
+append_dtb         = true
+
+#
+# Android Boot Image Configs
+#
+[boot_image]
+header_version = 1
